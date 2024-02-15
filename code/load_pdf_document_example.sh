@@ -1,0 +1,1 @@
+python load_pdf_document.py /home/foo/projects/chatbot_genAI_rag_solution/data/Benefit_Options.pdf

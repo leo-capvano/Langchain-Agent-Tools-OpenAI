@@ -1,0 +1,84 @@
+{
+  "messages": {
+    "post_answering_filter": "I'm sorry, but I can't answer this question correctly. Please try again by altering or rephrasing your question."
+  },
+  "document_processors": [
+    {
+      "document_type": "pdf",
+      "chunking": {
+        "strategy": "layout",
+        "size": 500,
+        "overlap": 100
+      },
+      "loading": {
+        "strategy": "layout"
+      }
+    },
+    {
+      "document_type": "txt",
+      "chunking": {
+        "strategy": "layout",
+        "size": 500,
+        "overlap": 100
+      },
+      "loading": {
+        "strategy": "web"
+      }
+    },
+    {
+      "document_type": "url",
+      "chunking": {
+        "strategy": "layout",
+        "size": 500,
+        "overlap": 100
+      },
+      "loading": {
+        "strategy": "web"
+      }
+    },
+    {
+      "document_type": "md",
+      "chunking": {
+        "strategy": "layout",
+        "size": 500,
+        "overlap": 100
+      },
+      "loading": {
+        "strategy": "web"
+      }
+    },
+    {
+      "document_type": "html",
+      "chunking": {
+        "strategy": "layout",
+        "size": 500,
+        "overlap": 100
+      },
+      "loading": {
+        "strategy": "web"
+      }
+    },
+    {
+      "document_type": "docx",
+      "chunking": {
+        "strategy": "layout",
+        "size": 500,
+        "overlap": 100
+      },
+      "loading": {
+        "strategy": "docx"
+      }
+    }
+  ],
+  "logging": {
+    "log_user_interactions": true,
+    "log_tokens": true
+  },
+  "orchestrator": {
+    "strategy": "langchain_openai_tools"
+  },
+  "prompts": {
+    "enable_post_answering_prompt": true,
+    "enable_content_safety": true
+  }
+}

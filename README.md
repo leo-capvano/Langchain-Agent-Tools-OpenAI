@@ -35,6 +35,10 @@ In this case the openai agent extract the relevant information to learn and feed
 > 2. pip install -r requirements.txt
 > 3. python app.py -> exposes back-end rest api server to localhost:5000
 
+## Set up vector store
+> 1. cd /path/to/project/docker  
+> 2. docker-compose -f docker-compose-postgres.yml up -d
+
 
 ## Execution case Chat Learning Tool
 ![exec_case_cl](media/exec_case_cl.png)

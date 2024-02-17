@@ -70,3 +70,5 @@ Thus when an agent receives a sentence from the user that says: **"I want you to
 2. in this case, based on the above tool's description, it selects the chat learning tool because the user is asking to remember something (as the tool's description says)
 
 NOTE: an Agent interacts with an LLM too to decide which tool to use
+
+Cheers :)
